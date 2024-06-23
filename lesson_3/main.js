@@ -53,3 +53,39 @@ console.log(n);
 console.log(z);
 console.log(o);
 
+
+// Toán tử logic
+// có 3 kiểu như  ||, &&, !
+let l =11;
+console.log(l > 0 && l != 10);
+console.log(l > 0 && l < 15);
+console.log(l > 0 || l != 11);
+// Lưu ý && thì phải thỏa mãn tất cả điều kiện mới True
+// Còn || thì chỉ cần 1 trong những điều kiện True thì True
+
+// BÀI TẬP 
+
+let r = prompt("Xin nhập vào bán kính");
+
+let PI = Math.PI;
+let cv = 2 * PI * r;
+let dt = PI * r**2;
+
+console.log(cv);
+console.log(dt);
+
+// BÀI TẬP
+
+let p = prompt("Xin mời nhập chiều dài hình chữ nhật");
+let u = prompt("Xin mời nhập chiều rộng hình chữ nhật");
+
+let cvhcn = p + u;
+let dthcn = p * u;
+console.log("Diện tích hcn là %s",dthcn);
+console.log(cvhcn);
+
+// BÀI TẬP làm tròn 2 chữ số sau dấu phẩy
+
+let dtb = 8.214556;
+    dtb = dtb.toFixed(2);
+console.log(dtb);
