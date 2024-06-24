@@ -65,7 +65,7 @@ console.log(l > 0 || l != 11);
 
 // BÀI TẬP 
 
-let r = prompt("Xin nhập vào bán kính");
+let r = Number(prompt("Xin nhập vào bán kính"));
 
 let PI = Math.PI;
 let cv = 2 * PI * r;
@@ -76,16 +76,15 @@ console.log(dt);
 
 // BÀI TẬP
 
-let p = prompt("Xin mời nhập chiều dài hình chữ nhật");
-let u = prompt("Xin mời nhập chiều rộng hình chữ nhật");
+let p = Number(prompt("Xin mời nhập chiều dài hình chữ nhật"));
+let u = Number(prompt("Xin mời nhập chiều rộng hình chữ nhật"));
 
-let cvhcn = p + u;
+let cvhcn = 2 * (p + u);
 let dthcn = p * u;
 console.log("Diện tích hcn là %s",dthcn);
-console.log(cvhcn);
+console.log("Chu vi hcn là %s",cvhcn);
 
 // BÀI TẬP làm tròn 2 chữ số sau dấu phẩy
 
 let dtb = 8.214556;
-    dtb = dtb.toFixed(2);
-console.log(dtb);
+console.log("Điểm trung bình =",dtb.toFixed(2));
