@@ -23,7 +23,7 @@ if(dtb2 >= 8 && dtb2 <= 10){
 
 // CÁC BÀI TẬP
 
-// 1.
+// 1. 
 // x + y = 14
 // x - y = 4
 let tong = 14;
@@ -65,7 +65,7 @@ if(year % 4 === 0 && year % 100 !== 0 || year % 400 === 0){
     console.log("Đây là năm không nhuận");
 }
 
-// 4.
+
 let month = parseInt(prompt("xin mời nhập vào tháng"));
 
 
@@ -85,4 +85,39 @@ else if(month === 2){
     }
 }else{
     console.log("Tháng không hợp lệ vui lòng nhập lại!");
+}
+
+// 5. ax2 + bx + c = 0 -> tính delta
+let a = 1;
+let b = 1;
+let c = 1;
+
+let delta= (b**2) - (4*a*c);
+
+if(delta < 0){
+    console.log("Phương trình vô nghiệm"); 
+}else if(delta === 0){
+    let x1 = (-b) / (2*a);
+    console.log("Phương trình có nghiệm kép x1 = x2 = %s",x1);
+}else if(delta > 0){
+    let xx = (-b + Math.sqrt(delta)) / (2 * a);
+    let xxx = (-b - Math.sqrt(delta)) / (2 * a);
+    console.log(`Phương trình có 2 nghiệm phân biệt x1 = %s và x2 = %s`,xx,xxx);
+}
+
+// 6.
+
+let monthandquy = 1;
+
+if(monthandquy === 1 || monthandquy === 2 || monthandquy === 3 ){
+    console.log("Tháng %s là quí 1",monthandquy);
+}
+else if(monthandquy === 4 || monthandquy === 5 || monthandquy === 6 ){
+    console.log("Tháng %s là quí 2",monthandquy);
+}
+else if(monthandquy === 7 || monthandquy === 8 || monthandquy === 9 ){
+    console.log("Tháng %s là quí 3",monthandquy);
+}
+else if(monthandquy === 10 || monthandquy === 11 || monthandquy === 12 ){
+    console.log("Tháng %s là quí 4",monthandquy);
 }
