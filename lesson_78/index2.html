@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về DOM style</title>
+</head>
+<style>
+    .container{
+        display: flex;
+       
+    }
+    .btn_list{
+        margin-left: 2px;
+    }
+    .btn_item{
+        font-size: 0.5rem;
+        border-radius: 10px;
+        border: none;
+        height: 20px;
+        width: 70px;
+        background-color: blue;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    .btn_item--diffcolor{
+        background-color: rgb(165, 195, 196);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="btn_list">
+        <button class="btn_item btn_item--diffcolor">Log In</button>
+        </div>
+        <div class="btn_list">
+            <button class="btn_item" id="color1">Sign Up</button>
+        </div>
+    </div>
+    <div class="container">
+        <p id="textcolor">Exceptional dental care for all ages.</p>
+    </div>
+
+    <script src="main2.js"></script>
+</body>
+</html>
