@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+</head>
+<body id="body">
+
+    <!-- Nhược điểm của inline event là code trực tiếp trên
+    HTML nên sẽ rối và không có tính tái sử dụng cao -->
+
+    <h1>Học inline event</h1>
+    <button onclick="alert('Bạn đã click chuột')">Click me!</button>
+    <button onclick="alert('Bạn đã click chuột'); alert('Hello bạn')">Click me!</button>
+    <br>
+    <span onmouseover="this.style.backgroundColor = 'pink'"
+        onmouseleave="this.parentElement.style.backgroundColor = 'purple'"
+    >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate corporis a odio explicabo eum porro</span>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
